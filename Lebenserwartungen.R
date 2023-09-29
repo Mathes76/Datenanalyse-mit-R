@@ -113,7 +113,7 @@ gapminder_Europe_2010 %>%
 
  
 # Anstieg der Weltpopulation von 1960 bis 2015
-rise_population <- aggregate(population ~ year, data = gapminder,sum)
+rise_population <- aggregate(population ~ year, data = gapminder, sum)
 rise_population %>% 
   ggplot(aes(year, population/1000000000)) +
   geom_line()
